@@ -4,7 +4,7 @@ A language model that uses the operations of an arc-hybrid transition-based pars
 
 #### Requirements
 - Python3
-- DyNet library for python (version 2.1)
+- DyNet library for Python3 (version 2.1)
 
 To train the model, a corpora in the CoNLL-U format is required (the model uses ID, FORM and HEAD columns).
 
