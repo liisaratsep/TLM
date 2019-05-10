@@ -30,4 +30,4 @@ To generate sentences using the trained model:
 
     python3 tlm.py --generate 20 --model modelname
 
-By using all relevant flags at once, the testing and/or generation can be done right after training automatically. Details on all available paramaters can be checked with `python3 tml.py --help`.
+By using all relevant flags at once, the testing and/or generation can be done right after training automatically. Details on all available paramaters can be checked with `python3 tlm.py --help`.
