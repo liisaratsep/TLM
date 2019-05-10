@@ -51,7 +51,7 @@ if __name__ == '__main__':
     if options.conll_train and options.conll_dev:
         train = conll_transform(options.conll_train)
         dev = conll_transform(options.conll_dev)
-        model = TML(options, train, dev)
+        model = TLM(options, train, dev)
         if options.resume:
             model.load(options.last_epoch)
         model.train()
@@ -60,7 +60,7 @@ if __name__ == '__main__':
             model.evaluate(test)
         model.generate(options.generate)
     elif options.conll_test or options.generate > 0:
-        model = TML(options, None, None)
+        model = TLM(options, None, None)
         model.load()
         if options.conll_test:
             test = conll_transform(options.conll_test)
