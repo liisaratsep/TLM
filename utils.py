@@ -8,7 +8,7 @@ import logging
 import pickle
 
 
-class TML:
+class TLM:
     def __init__(self, options, train, dev):
         resume = options.resume
         score = options.score
